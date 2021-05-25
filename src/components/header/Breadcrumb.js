@@ -1,11 +1,16 @@
 function Breadcrumb() {
   return (
-    <div className="breadcrumb">
-      <div className="library-name">My Library</div>
-      <div className="arrow">&gt;</div>
-      <div className="category">Movies</div>
+    <div>
+      <p className="my-library">
+        My Library <small>{">"} Movies</small>
+      </p>
     </div>
   );
 }
 
 export default Breadcrumb;
+<div>
+      <p className="my-library">
+        My Library <small>{">"} Movies</small>
+      </p>
+    </div>

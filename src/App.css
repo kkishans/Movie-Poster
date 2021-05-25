@@ -3,24 +3,17 @@
   padding: 3rem 3rem 0 3rem;
   justify-content: space-between;
   justify-items: center;
+  align-items: center;
 }
-.breadcrumb {
-  display: flex;
-  font-family: "Roboto";
+
+.my-library{
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
+  font-size: 28px;
+  
 }
-.library-name {
-  font-size: 24px;
-}
-.arrow {
-  padding: 0px 1rem;
-  color: rgb(170, 170, 170);
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-.category {
-  margin-top: 0.5rem;
-}
+
 .search-box {
   background-color: rgb(255, 255, 255, 0.3);
   font-size: 20px;
@@ -97,14 +90,79 @@
 }
 .cast-list{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: center;
+  flex-wrap: wrap;
+
 }
 .cast-photo img{
   width: 120px;
   height: 150px;
 }
+.card-cast{
+  /* margin-bottom: 1rem; */
+  margin: 0 .5rem 1rem .5rem;
+}
 .cast-role{
   font-size: 14px;
   color: lightgray;
+}
+
+@media screen and (max-width : 720px) {
+  .container{
+    width: 100vw;
+  }
+  .header{
+    padding: 1rem .5rem 0 .5rem;
+  }
+  .my-library{
+    font-size: 18px;
+  }
+
+  .search-box{
+    width:130px;
+  }
+  .search-box input {
+    font-size: 12px;
+  }
+  .movie-logo{
+    display: none;
+  }
+  .movie-details{
+    padding: 1rem .5rem 0 .5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .poster img{
+    width: 100%;
+    height: 300px;
+    
+  }
+  .movie-title{
+    padding: 0;
+    padding-top: 1rem;
+    font-family: Roboto;
+    font-size: 24px;
+  }
+
+  .review , .genre-director, .tag-line {
+    padding: 0px;
+  }
+  .tag-line{
+    padding-top: 1rem ;
+    position: relative;
+  }
+  .tag-line p{
+    margin: auto;
+  }
+  .movie-desc{
+    padding: 0 .5rem;
+  }
+  .cast-crew{
+    padding: 0px .5rem; 
+  }
+  .card-cast{
+    margin-bottom: 1rem;
+  }
+  
 }
