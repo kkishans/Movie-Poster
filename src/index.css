@@ -4,6 +4,7 @@ body {
   margin: 0;
   background-color: black;
   font-family: 'Roboto';
+  width: 100%;
 }
 .container{
   background: linear-gradient( rgba(34, 34, 34, 0.9), rgba(0, 0, 0, 0.5) ), 

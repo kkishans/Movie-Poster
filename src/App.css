@@ -114,6 +114,7 @@
   }
   .header{
     padding: 1rem .5rem 0 .5rem;
+    
   }
   .my-library{
     font-size: 18px;
@@ -132,6 +133,9 @@
     padding: 1rem .5rem 0 .5rem;
     display: flex;
     flex-direction: column;
+  }
+  .poster{
+    margin: 0 auto;
   }
   .poster img{
     width: 100%;
@@ -161,8 +165,20 @@
   .cast-crew{
     padding: 0px .5rem; 
   }
+  .cast-list{
+    justify-content: space-evenly;
+  }
   .card-cast{
     margin-bottom: 1rem;
   }
   
+}
+
+@media screen and (max-width:1080px) {
+  .container{
+    width: 100vw;
+  }
+  .movie-logo img{
+    width: 100%;
+  }
 }
